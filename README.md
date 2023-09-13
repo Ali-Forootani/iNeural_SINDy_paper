@@ -2,7 +2,7 @@
 
 **iNeuralSINDy** is a nonlinear system identification approach that combines deep learning and integration scheme to deal with the problem of noisy as well as small data sets.
 
-![My Image](./iNeuralSINDy schematic/iNeural_sindy_final.jpg)
+![My Image](./iNeuralSINDy_schematic/iNeural_sindy_final.jpg)
 
 
 
