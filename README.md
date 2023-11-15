@@ -41,6 +41,24 @@ conda env create -f environment.yml
 
 A Spyder IDE by deafult will be installed with the conda environment. When you `activate` the conda environemnt then type `spyder` so an instance of the the IDE will pop-up.
 
+#### Generating images and reproducability
+
+Generally three types of figures are inside the draft. The first type of figures is like 6, and 7 which we only simulate based on each level of noise. To generate these images for each example you should run e.g. `Cubic_Oscilator.py` to generate images like 6, and 7 with setting associated noise level with parameter e.g. `noise_level=0.02`. 
+In image 6 for instance we compare `iNeuralSINDy` with other approaches with different noise level. In image 7 we show the convergence of the coefficients. For the other examples we have the same setup. Please bear in mind simulation takes some minutes.
+
+The second type of figures is like 8 that we compare the performance of `iNeuralSINDy` with `DeePyMoD` with fixed Neural Network structure and various number of samples e.g. `num_samples = [30, 40, 50, 100, 200, 300, 400]` which is named in the draft with `Scene_A`. In this regard you should run `Cubic_Oscilator_different_samples.py` and see the `heatmap` plot. For the other examples we have the same setup. Please bear in mind simulation takes a few hours.
+
+The third type of figures is like 9 that we compare the performance of `iNeuralSINDy` with `DeePyMoD` with fixed number of samples and various number of neurons e.g. `num_hidden_neur = [2, 4, 8, 16, 32, 64]` which is named in the paper draft with `Scene_B`. In this regard you should run `Cubic_Oscilator_different_neurons.py` and see the `heatmap` plot. For the other examples we have the same setup. Please bear in mind simulation takes a few hours.
+
+For `Lorenz system` we have considered to do the simulations slightly different with setting `scaling factor= 0.1, 1`. The rest is similar as mentioned.
+
+
+
+
+
+
+
+
 
 
 Here it is a simple example for input setting to identify cubic oscillator dynamical system:
